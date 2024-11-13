@@ -1,0 +1,164 @@
+nav{
+    width: 100%;
+    background-color: #f8f8f8;
+    padding: 20px 10px 10px; /* Thêm padding-top */
+    justify-content: space-between;      /* logo qua trái menu qua phải*/
+    display: flex;
+    font-family: 'Lato', sans-serif;
+}
+nav img {
+    height: auto; /* Để logo tự động điều chỉnh chiều cao */
+    max-height: 90px; /* Hoặc kích thước cụ thể mà bạn muốn */
+    max-width: 100%; /* Để tránh việc logo bị tràn ra ngoài */
+    display: block; /* Đảm bảo logo không có khoảng cách bên dưới */
+}
+
+ul{
+    justify-content: flex-end;
+    display: flex;
+    list-style: none;
+    margin: 0; 
+    padding: 10px 0; /* Thêm padding để tạo khoảng cách */
+}
+li{
+    margin-right: 20px;
+    text-decoration: none;  /* xóa gạch chân */
+    margin-right: 20px;
+    cursor: pointer;  /* mất dấu con trỏ */
+}
+a{
+    padding: 15px 15px;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    background-color: #76B900;
+    color: white;
+}
+
+/* phần banner */
+/* phần banner thứ 1 */
+
+.banner {
+    background-color: black;
+    position: relative;
+    width: 100%;
+    height: 400px; /*  điều chỉnh chiều cao */
+    overflow: hidden;
+    margin-bottom: 20px; /* Tạo khoảng cách dưới banner */
+}
+
+.banner img {
+    position: absolute;
+    right: 40px;
+    top: 0; /* thuộc tính này để giữ ảnh ở trên cùng */
+    width: auto; /* Giữ kích thước tự nhiên của ảnh để phù hợp cho sau này làm mobile */
+    height: 100%; /* Để bức ảnh chiếm toàn bộ chiều cao */
+    object-fit: cover; /* Để ảnh không bị méo */
+}
+.banner-content {
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: left;
+}
+
+.banner h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    margin: 0; /* Xóa margin mặc định */
+}
+
+.banner p {
+    font-family: 'Roboto', sans-serif;
+    color: #eee;
+    font-size: 25px;
+}
+
+/* phần banner thứ 2 */
+.banner-2 {
+    background-color: white;
+    position: relative;
+    width: 100%;
+    height: 400px; /* điều chỉnh chiều cao */
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.banner-2 img {
+    position: absolute; /* Thêm vị trí cho ảnh */
+    right: 40px; /* Căn chỉnh tương tự như banner đầu tiên */
+    width: auto; /* Giữ kích thước tự nhiên của ảnh */
+    height: 100%; /* Để bức ảnh chiếm toàn bộ chiều cao */
+    object-fit: cover; /* Để ảnh không bị méo */
+}
+
+.banner-2-content {
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 27%; /* Tăng giá trị này để căn giữa */
+    transform: translate(-50%, -50%);
+    color: black;
+    text-align: left;
+}
+
+.banner-2 h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px; /* Kích thước chữ như banner đầu */
+    margin: 0; /* Xóa margin mặc định */
+}
+
+.banner-2 p {
+    font-family: 'Roboto', sans-serif;
+    color: #1a1a1a; /* Màu chữ */
+    font-size: 25px; 
+}
+
+/* phần banner thứ 3 */
+.banner-3 {
+    background-color: #eee;
+    position: relative;
+    width: 100%;
+    height: 400px; /*  điều chỉnh chiều cao */
+    overflow: hidden;
+    margin-top: 20px; /* Khoảng cách giữa banner và phần trên */
+    padding-top: 20px; /* Thêm khoảng cách ở trên cùng */
+    padding-bottom: 20px; /* Thêm khoảng cách ở dưới cùng */
+}
+
+.banner-3 img {
+    position: absolute; /* Thêm vị trí cho ảnh */
+    right: 40px; /* Căn chỉnh tương tự như banner đầu tiên */
+    width: auto; /* Giữ kích thước tự nhiên của ảnh */
+    height: 100%; /* Để bức ảnh chiếm toàn bộ chiều cao */
+    object-fit: cover; /* Để ảnh không bị méo */
+}
+
+.banner-3-content {
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 27%; /* Tăng giá trị này để căn giữa */
+    transform: translate(-50%, -50%);
+    color: black; 
+    text-align: left;
+}
+
+.banner-3 h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px; 
+    margin: 0; /* Xóa margin mặc định */
+}
+
+.banner-3 p {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-size: 25px;
+}

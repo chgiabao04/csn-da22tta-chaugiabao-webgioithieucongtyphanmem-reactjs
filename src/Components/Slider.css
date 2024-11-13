@@ -1,0 +1,37 @@
+.dash-indicators {
+  display: flex; /* Sử dụng flexbox để căn giữa */
+  justify-content: center; /* Căn giữa dấu gạch */
+  margin-top: 20px; /* Khoảng cách từ banner slider đến dấu gạch */
+}
+  
+.dash {
+  width: 60px; /* Độ dài của dấu gạch */
+  height: 7px; /* Độ dày của dấu gạch */
+  background-color: gray; /* Màu nền dấu gạch */
+  margin: 0 20px; /* Khoảng cách giữa các dấu gạch */
+  transition: background-color 0.3s; /* Hiệu ứng chuyển màu */
+  }
+  
+.dash.active {
+  background-color: #76B900; /* Màu sắc khi dấu gạch đang được chọn */
+}
+
+/*content silder*/
+.slider-container {
+  font-family: 'Lato', sans-serif; 
+}
+.banner-content p, .banner-2-content p, .banner-3-content p {
+  margin: 0; /* Đảm bảo không có khoảng cách mặc định */
+  padding: 0;
+  line-height: 1.6; /* Tạo khoảng cách giữa các dòng trong thẻ p */
+  margin-bottom: 15px; /* Tạo khoảng cách dưới mỗi đoạn văn */
+
+}
+.banner-content h1, .banner-2-content h1, .banner-3-content h1 {
+  margin: 0; /* Đảm bảo không có khoảng cách mặc định */
+  padding: 0;
+  line-height: 1.6; /* Tạo khoảng cách giữa các dòng trong thẻ p */
+  margin-bottom: 15px; /* Tạo khoảng cách dưới mỗi đoạn văn */
+}
+
+ 

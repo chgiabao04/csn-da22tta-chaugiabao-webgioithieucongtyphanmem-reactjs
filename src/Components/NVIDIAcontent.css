@@ -1,0 +1,130 @@
+.content {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Căn chỉnh các phần tử con lên trên cùng */
+    flex-wrap: wrap; /* Cho phép xuống dòng nếu phần tử không vừa */
+    gap: 20px; /* Tạo khoảng cách giữa các phần tử */
+    margin-top: 50px; /* dịch chuyển xuống dưới cách phần silder */
+    font-family: 'Lato', sans-serif;
+}
+.content-text {
+    flex: 1;
+    max-width: 600px;
+    padding-left: 60px;
+    padding-right: 20px;
+}
+.content-text h1 {
+    font-size: 40px;
+}
+.content-text p {
+    font-size: 20px;
+}
+
+/* content tổng của phần ảnh */
+
+.content-img {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 800px; /* Giới hạn chiều rộng của nhóm ảnh */
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+/* ảnh 1 và 2 */
+
+.content-img1, .content-img2, .content-img3, .content-img4, .content-img5, .content-img6{
+    flex: 1 1 45%; /* Đảm bảo mỗi ảnh chiếm 45% chiều rộng */
+    display: inline-block; /* Để khung bao quanh ảnh */
+    background-color: #fff; /* Khung nền trắng */
+    padding: 10px; /* Tạo khoảng cách giữa ảnh và khung */
+    border-radius: 8px; /* Bo góc khung */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Tạo bóng mờ nhẹ */
+    transition: transform 0.3s ease; /* Hiệu ứng chuyển đổi khi zoom */
+    box-sizing: border-box; /* Đảm bảo padding không làm tăng chiều rộng */
+    flex-shrink: 0; /* Không cho phép phần tử này co lại */
+    margin-right: 10px; /* Tạo khoảng cách giữa ảnh và cạnh phải */
+    padding-bottom: 40px; /* khoản cách trắng ở dưới bottom */
+    max-width: 400px; /* phóng to thu nhỏ ảnh */
+    flex-direction: column; /* Để hình ảnh nằm dọc */    
+}
+
+/* ảnh 1 */
+.content-img1 img {
+    max-width: 100%; /* đảm bảo k bự hơn content  */
+    height: auto; /* Giữ tỷ lệ hình ảnh k làm biến dạng ảnh  */
+    width: 100%; /* đảm bảo ảnh chiếm toàn bộ khung trắng */
+    max-height: 200px;
+}
+.content-img1:hover {
+    transform: scale(1.05); /* Zoom lên khi hover */
+    
+}
+
+/* ảnh 2 */
+.content-img2 img{
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    max-height: 200px;
+}
+.content-img2:hover{
+    transform: scale(1.05); /* Zoom lên khi hover */
+}
+
+/*ảnh 3*/
+.content-img3 img{
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    max-height: 200px;
+}
+.content-img3:hover{
+    transform: scale(1.05); /* Zoom lên khi hover */
+}
+/*ảnh 4*/
+.content-img4 img{
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    max-height: 200px;
+}
+.content-img4:hover{
+    transform: scale(1.05); /* Zoom lên khi hover */
+}
+/*ảnh 5*/
+
+.content-img5 img{
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    max-height: 200px;
+}
+.content-img5:hover{
+    transform: scale(1.05); /* Zoom lên khi hover */
+}
+/*ảnh 6*/
+
+.content-img6 img{
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    max-height: 200px;
+}
+.content-img6:hover{
+    transform: scale(1.05); /* Zoom lên khi hover */
+}
+
+
+/*mobile */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .content-img1, .content-img2 {
+        margin-right: 0; /* Bỏ khoảng cách phải khi xếp hàng dọc */
+        max-width: 100%;
+    }
+}
